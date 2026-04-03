@@ -12,9 +12,15 @@ title: LIGA – UFF
   <div class="hero-text">
     <h1>LIGA</h1>
     <h2>TER/UFF</h2>
-    <p>
-      Laboratório Integrado de Tecnologias Geoespaciais para o Meio Ambiente
-    </p>
-  </div>
 
-</div>
+    <p class="hero-dept">
+      Departamento de Engenharia Agrícola e Meio Ambiente
+    </p>
+
+    <p class="hero-main">
+      <strong>L</strong>aboratório <strong>I</strong>ntegrado de 
+      <strong>G</strong>eotecnologias para o 
+      <strong>A</strong>mbiente
+    </p>
+
+  </div>

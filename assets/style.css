@@ -209,6 +209,17 @@ body.internal .content {
   max-width: 520px;
 }
 
+.hero-main {
+  font-size: 1.15rem;
+  opacity: 0.95;
+  max-width: 520px;
+}
+
+.hero-main strong {
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
 /* =========================================================
    ANIMAÇÃO SUAVE (OPCIONAL MAS RECOMENDADO)
    ========================================================= */
