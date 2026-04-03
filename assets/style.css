@@ -456,3 +456,16 @@ body.internal .content {
   font-size: 0.9rem;
   line-height: 1.2;
 }
+
+/* =========================================================
+   AGENDA
+   ========================================================= */
+
+.agenda-container {
+  margin-top: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.agenda-container iframe {
+  background: white;
+}
