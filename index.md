@@ -18,9 +18,8 @@ title: LIGA – UFF
     </p>
 
     <p class="hero-main">
-      <strong>L</strong>aboratório <strong>I</strong>ntegrado de 
-      <strong>G</strong>eotecnologias para o 
-      <strong>A</strong>mbiente
+      <strong>L</strong>aboratório <strong>I</strong>ntegrado de
+      Tecnologias <strong>G</strong>eoespaciais para o Meio Ambiente
     </p>
 
   </div>

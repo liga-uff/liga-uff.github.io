@@ -217,7 +217,8 @@ body.internal .content {
 
 .hero-main strong {
   font-weight: 700;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.05em;
+  color: #9fd3c7;
 }
 
 /* =========================================================
