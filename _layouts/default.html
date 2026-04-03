@@ -9,7 +9,10 @@
 
   {% include institutional-bar.html %}
   {% include navigation.html %}
-  {% include video-background.html %}
+  {% if page.url == "/" %}
+    {% include video-background.html %}
+    <div class="video-overlay"></div>
+  {% endif %}
 
 <div class="content">
 {{ content }}

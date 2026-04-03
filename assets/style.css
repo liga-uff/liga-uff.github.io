@@ -114,14 +114,14 @@ html, body {
 /* =========================================================
    OVERLAY (MELHORA LEGIBILIDADE)
    ========================================================= */
-
+/*
 body::before {
   content: "";
   position: fixed;
   inset: 0;
   background: rgba(0,0,0,0.2);
   z-index: 1;
-}
+}*/
 
 
 /* =========================================================
@@ -153,11 +153,13 @@ body.home .content {
    PÁGINAS INTERNAS
    ========================================================= */
 
+body.internal {
+  background: url('/assets/background.png') center center / cover no-repeat fixed;
+}
+
 body.internal .content {
-  background: rgba(6, 18, 38, 0.88);
-  color: #ffffff;
-  border-radius: 14px;
-  box-shadow: 0 12px 45px rgba(0, 0, 0, 0.65);
+  background: rgba(8, 20, 40, 0.85);
+  backdrop-filter: blur(6px);
 }
 
 
