@@ -166,8 +166,8 @@ body.internal .content {
    ========================================================= */
 
 .hero-grid {
-  position: absolute;
-  top: calc(50% + 40px);
+  position: fixed;
+  top: calc(50% + 50px);
   left: 10%;
   transform: translateY(-50%);
   display: flex;
