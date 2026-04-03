@@ -3,11 +3,6 @@ layout: default
 title: Comitê Gestor
 ---
 
----
-layout: default
-title: Comitê Gestor
----
-
 ## Comitê Gestor
 
 <div class="committee-grid">
