@@ -1,0 +1,8 @@
+title: LIGA – UFF
+description: Laboratório LIGA – UFF
+baseurl: ""
+url: "https://liga-uff.github.io"
+
+collections:
+  people:
+    output: true
