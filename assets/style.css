@@ -188,7 +188,7 @@ body.internal .content {
 
 
 /* =========================================================
-   HERO (LOGO + TEXTO)
+   HERO (DESKTOP)
    ========================================================= */
 
 .hero-grid {
@@ -196,60 +196,100 @@ body.internal .content {
   top: calc(50% + (var(--bar-height) + var(--nav-height)) / 2);
   left: 10%;
   transform: translateY(-50%);
+
   display: flex;
   align-items: flex-start;
-  gap: 1.2rem;
+  gap: 1.5rem;
+
   max-width: 900px;
   color: white;
-  animation: heroFade 1.2s ease-out forwards;
+
+  animation: heroFadeDesktop 1.2s ease-out forwards;
   opacity: 0;
   z-index: 2;
 }
 
-/* LOGO */
+
+/* =========================================================
+   LOGO
+   ========================================================= */
 
 .hero-logo img {
-  width: 180px;
+  width: 220px;
   height: auto;
+
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid rgba(255,255,255,0.8);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+
+  border: 3px solid rgba(255,255,255,0.85);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.55);
 }
 
-/* TEXTO */
+
+/* =========================================================
+   TEXTO
+   ========================================================= */
 
 .hero-text {
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
-  text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+  gap: 0.4rem;
+
+  text-shadow: 0 2px 12px rgba(0,0,0,0.65);
 }
+
+
+/* H1 = CONTEXTO */
 
 .hero-text h1 {
-  font-size: clamp(2.8rem, 6vw, 4.2rem);
-  margin: 0;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
+  font-size: clamp(2rem, 3.8vw, 2.6rem);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  opacity: 0.85;
 }
 
-.hero-text h2 {
-  margin: 0;
-  font-size: 1.1rem;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  opacity: 0.8;
+.hero-text h1::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 2px;
+  background: var(--color-primary);
+  margin-top: 0.5rem;
 }
+
+/* "AO" mais leve */
+
+.hero-text .ao {
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+
+/* H2 = PROTAGONISTA */
+
+.hero-text h2 {
+  font-size: clamp(1.8rem, 2.8vw, 2.4rem);
+  font-weight: 500;
+  line-height: 1.25;
+  max-width: 640px;
+  letter-spacing: 0.01em;
+}
+
+
+/* PARÁGRAFOS */
 
 .hero-text p {
   margin: 0;
 }
 
+
+/* TEXTO PRINCIPAL (caso use) */
+
 .hero-main {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   opacity: 0.95;
   max-width: 520px;
-  line-height: 1.3;
+  line-height: 1.35;
 }
 
 .hero-main strong {
@@ -258,18 +298,21 @@ body.internal .content {
   color: var(--color-primary);
 }
 
+
+/* INSTITUCIONAL */
+
 .hero-dept {
-  font-size: 0.9rem;
-  opacity: 0.75;
-  line-height: 1.2;
+  font-size: 0.85rem;
+  opacity: 0.7;
+  line-height: 1.25;
 }
 
 
 /* =========================================================
-   ANIMAÇÃO
+   ANIMAÇÃO (DESKTOP)
    ========================================================= */
 
-@keyframes heroFade {
+@keyframes heroFadeDesktop {
   from {
     opacity: 0;
     transform: translateY(calc(-50% + 20px));
@@ -294,37 +337,53 @@ body.internal .content {
   color: var(--color-primary-light);
 }
 
-
 /* =========================================================
-   RESPONSIVO
+   RESPONSIVO (MOBILE REAL)
    ========================================================= */
 
 @media (max-width: 768px) {
 
+  /* HERO deixa de ser fixo e passa a fluir */
   .hero-grid {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
-    left: 1.5rem;
-    right: 1.5rem;
-    top: calc(50% + 30px);
-    gap: 1.2rem;
+
+    margin-top: calc(var(--bar-height) + var(--nav-height) + 2rem);
+    padding: 0 1.5rem;
+
+    gap: 1.4rem;
+    max-width: 100%;
   }
 
+  /* LOGO menor e mais leve */
   .hero-logo img {
-    width: 90px;
+    width: 100px;
+    border-width: 2px;
   }
 
+  /* BLOCO DE TEXTO */
+  .hero-text {
+    gap: 0.4rem;
+  }
+
+  /* H1 = contexto, não protagonista */
   .hero-text h1 {
-    font-size: clamp(2.2rem, 4.5vw, 3rem);
+    font-size: 1.4rem;
     font-weight: 600;
     letter-spacing: 0.05em;
-    opacity: 0.9;
+    opacity: 0.85;
   }
 
   .hero-text h1::after {
     content: "";
     display: block;
-    width: 40px;
+    width: 36px;
     height: 2px;
     background: var(--color-primary);
     margin-top: 0.4rem;
@@ -333,23 +392,26 @@ body.internal .content {
   .hero-text .ao {
     font-weight: 400;
     opacity: 0.7;
-    letter-spacing: 0.02em;
   }
 
+  /* H2 = protagonista */
   .hero-text h2 {
-    font-size: clamp(1.4rem, 2.2vw, 2rem);
+    font-size: 1.25rem;
+    line-height: 1.35;
     font-weight: 500;
-    line-height: 1.25;
-    max-width: 600px;
-    letter-spacing: 0.01em;
+    max-width: 100%;
   }
 
+  /* TEXTO PRINCIPAL */
   .hero-main {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.4;
   }
 
+  /* INSTITUCIONAL */
   .hero-dept {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
+    opacity: 0.7;
   }
 
 }
