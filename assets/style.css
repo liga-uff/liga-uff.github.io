@@ -415,3 +415,44 @@ body.internal .content {
   }
 
 }
+
+/* =========================================================
+   COMITÊ
+   ========================================================= */
+
+.committee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.committee-card {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+
+  transition: transform 0.2s ease;
+}
+
+.committee-card:hover {
+  transform: translateY(-4px);
+}
+
+.committee-card img {
+  width: 100%;
+  max-width: 140px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.8);
+
+  margin-bottom: 0.6rem;
+}
+
+.committee-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
