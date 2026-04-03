@@ -5,18 +5,20 @@
   <title>{{ page.title }}</title>
   <link rel="stylesheet" href="/assets/style.css">
 </head>
-<body>
+
+<body class="{% if page.url == '/' %}home{% else %}internal{% endif %}">
 
   {% include institutional-bar.html %}
   {% include navigation.html %}
+
   {% if page.url == "/" %}
     {% include video-background.html %}
     <div class="video-overlay"></div>
   {% endif %}
 
-<div class="content">
-{{ content }}
-</div>
+  <div class="content">
+    {{ content }}
+  </div>
 
 </body>
 </html>
