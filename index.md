@@ -6,7 +6,7 @@ title: LIGA – UFF
 <div class="hero-grid">
 
   <div class="hero-logo">
-    <img src="/assets/img/logo.png" alt="LIGA logo">
+    <img src="/assets/img/logo-white.png" alt="LIGA logo">
   </div>
 
   <div class="hero-text">
