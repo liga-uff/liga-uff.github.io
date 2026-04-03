@@ -132,7 +132,7 @@ body::before {
   position: relative;
   z-index: 2;
   max-width: 900px;
-  margin: 6rem auto 3rem auto;
+  margin: 8rem auto 3rem auto;
   padding: 2rem;
 }
 
@@ -162,26 +162,99 @@ body.internal .content {
 
 
 /* =========================================================
-   HERO (TEXTO SOBRE VÍDEO)
+   HERO (LOGO + TEXTO SOBRE VÍDEO)
    ========================================================= */
 
-.hero-content {
+.hero-grid {
   position: absolute;
-  top: 45%;
+  top: calc(50% + 40px);
   left: 10%;
   transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  max-width: 900px;
   color: white;
-  max-width: 600px;
 }
 
-.hero-content h1 {
-  font-size: clamp(2.5rem, 6vw, 4rem);
-  margin: 0 0 0.5rem 0;
+/* LOGO */
+
+.hero-logo img {
+  width: 140px;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5));
 }
 
-.hero-content p {
+/* TEXTO */
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-text h1 {
+  font-size: clamp(2.8rem, 6vw, 4.2rem);
+  margin: 0;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.hero-text p {
   font-size: 1.2rem;
   opacity: 0.9;
+  margin-top: 0.6rem;
+  max-width: 520px;
+}
+
+/* =========================================================
+   ANIMAÇÃO SUAVE (OPCIONAL MAS RECOMENDADO)
+   ========================================================= */
+
+.hero-grid {
+  animation: heroFade 1.2s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes heroFade {
+  to {
+    opacity: 1;
+    transform: translateY(-50%) translateY(0);
+  }
+}
+
+/* =========================================================
+   RESPONSIVO
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .hero-grid {
+    flex-direction: column;
+    align-items: flex-start;
+    left: 1.5rem;
+    right: 1.5rem;
+    top: calc(50% + 30px);
+    gap: 1.5rem;
+  }
+
+  .hero-logo img {
+    width: 90px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-text h2 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.15em;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
 }
 
 
@@ -198,32 +271,6 @@ body.internal .content {
   color: #cfeee8;
 }
 
-
-/* =========================================================
-   RESPONSIVO
-   ========================================================= */
-
-@media (max-width: 768px) {
-
-  .institutional-bar {
-    height: 32px;
-    font-size: 0.75rem;
-  }
-
-  .main-nav {
-    top: 32px;
-  }
-
-  .hero-content {
-    left: 1.5rem;
-    right: 1.5rem;
-    top: 50%;
-  }
-
-  .content {
-    margin: 5rem 1rem 2rem 1rem;
-    padding: 1.5rem;
-  }
 
 }
 
