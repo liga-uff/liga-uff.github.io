@@ -3,7 +3,10 @@ layout: default
 title: Documentos
 ---
 
-## Atas
+## Documentos
 
-- Ata – 2026-03-15
-- Ata – 2026-02-10
+### Regimento Interno
+
+O Regimento Interno do LIGA estabelece as diretrizes de funcionamento, governança e uso da infraestrutura do laboratório.
+
+[📄 Acessar o Regimento Interno (PDF)](/assets/docs/regimento-liga.pdf)
