@@ -12,7 +12,7 @@ home: true
 
   <div class="hero-text">
 
-    <h1>BEM-VINDO AO</h1>
+    <h1>BEM-VINDO <span class="ao">AO</span></h1>
 
     <h2>
       <strong>L</strong>aboratório <strong>I</strong>ntegrado de Tecnologias 
