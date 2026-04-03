@@ -8,9 +8,13 @@ title: Agenda
 A agenda do LIGA apresenta a alocação de aulas, atividades e reservas do laboratório.
 
 <p>
-  <a href="mailto:liga.ter.tce@id.uff.br?subject=Agendamento%20LIGA&body=Olá,%20gostaria%20de%20solicitar%20um%20agendamento%20no%20LIGA.%0A%0ADescrição:%0AData:%0AHorário:%0A"
-     style="display:inline-block; padding:10px 16px; background:#28a745; color:white; text-decoration:none; border-radius:6px; font-weight:500;">
-    AGENDE AQUI
+  Para solicitar o uso do laboratório, utilize o botão abaixo:
+</p>
+
+<p>
+  <a href="mailto:liga.ter.tce@id.uff.br?subject=Solicitação%20de%20Agendamento%20LIGA&body=Nome:%0AVínculo:%20(Aluno/Professor/Externo)%0AAtividade:%0AData:%0AHorário:%0AEquipamentos%20necessários:%0A"
+     style="display:inline-block; padding:12px 18px; background:#0055a5; color:white; text-decoration:none; border-radius:6px; font-weight:600;">
+    AGENDAR USO DO LIGA
   </a>
 </p>
 
