@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }}</title>
   <link rel="stylesheet" href="/assets/style.css">
 </head>
@@ -19,6 +20,19 @@
   <div class="content">
     {{ content }}
   </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const hamburger = document.getElementById("hamburger");
+      const navMenu = document.getElementById("nav-menu");
+
+      if (hamburger && navMenu) {
+        hamburger.addEventListener("click", function () {
+          navMenu.classList.toggle("active");
+        });
+      }
+    });
+  </script>
 
 </body>
 </html>
