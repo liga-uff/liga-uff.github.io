@@ -376,6 +376,17 @@ body.internal .content {
   background: white;
 }
 
+.inst-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.uff-logo {
+  height: 22px;
+  width: auto;
+  object-fit: contain;
+}
 
 /* =========================================================
    RESPONSIVO
@@ -431,6 +442,10 @@ body.internal .content {
     width: 100%;
     font-size: 1.05rem;
     color: var(--color-text-dark);
+  }
+
+  .uff-logo {
+    height: 18px;
   }
 
   .content {
@@ -517,3 +532,4 @@ body.internal .content {
     gap: 1.2rem;
   }
 }
+
